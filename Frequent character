@@ -1,0 +1,8 @@
+input= input()
+r = 1
+for i in input:
+    p = input.count(i)
+    if p > r:
+        r = p
+        s = i
+print(s)

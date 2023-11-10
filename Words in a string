@@ -1,0 +1,9 @@
+example=["My", "name", "is", "Muktha"]
+print(len(example))
+
+c=0
+
+for i in range(len(example)):
+  c+=1
+
+print(c)    

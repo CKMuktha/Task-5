@@ -1,0 +1,16 @@
+test_str = 'abcaaaacbbaa'
+print("The original string is : " + str(test_str))
+ 
+K = 'a'
+ 
+n = len(test_str)
+dp = [0] * n
+dp[0] = 1 if test_str[0] == K else 0
+for i in range(1, n):
+    if test_str[i] == K:
+        dp[i] = dp[i-1] + 1
+    else:
+        dp[i] = 0
+max_count = max(dp)
+
+print("The Longest Substring Length : " + str(max_count))

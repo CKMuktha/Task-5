@@ -1,0 +1,6 @@
+#Function that takes a string and returns True if it is a palindrome else false
+a=input("enter a string: ")
+b = "".join(reversed(a))
+print(b)
+
+print(a in b)

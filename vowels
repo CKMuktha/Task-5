@@ -1,0 +1,17 @@
+example="Guvi Geeks Network Private Limited"
+count=0
+vowel='aeiou'
+
+for i in range(len(example)):
+    if example[i] in vowel: 
+     count+=1
+
+print("Number of vowels in example: ",count)
+
+count={}.fromkeys(vowel,0)
+
+for char in example:
+   if char in count:
+      count[char]+=1
+print(count)
+    

@@ -1,0 +1,12 @@
+#Write a function that takes a string and returns a string with all the vowels removed
+
+example=input("Enter a string: ")
+vowels="aeiouAEIOU"
+
+result=""
+
+for i in range(len(example)):
+    if example[i] not in vowels:
+        result=result+example[i]
+        
+print(result)        

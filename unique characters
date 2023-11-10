@@ -1,0 +1,7 @@
+example=input("enter a string: ")
+
+count= {}.fromkeys(example,0)
+for i in example:
+     if i in count:
+        count[i]+=1
+print(count)
